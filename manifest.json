@@ -1,0 +1,26 @@
+{
+	"author": "Cheatsoft",
+	"background": {
+		"service_worker": "background.js"
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://practice.answerwrite.com/TakeTest.aspx/*"],
+			"js": ["content.js"],
+			"css": ["contentStyling.css"]
+		}
+	],
+	"description": "ACED",
+	"icons": {
+		"16": "images/icon_16.png",
+		"32": "images/icon_32.png",
+		"48": "images/icon_48.png",
+		"128": "images/icon_128.png"
+	},
+	"incognito": "split",
+	"manifest_version": 3,
+	"name": "ACED",
+	"offline_enabled": false,
+	"short_name": "ACED",
+	"version": "1.0.0"
+}
